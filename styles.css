@@ -1,0 +1,85 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background: #333333;
+  color: #ffffff;
+}
+
+header {
+  color: #fff;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+#scores-container {
+  position: relative;
+  width: 200px;
+  margin: 50px auto;
+  border: 3px solid #fff;
+  border-radius: 4px;
+  padding: 30px 10px 10px;
+  text-align: center;
+}
+
+#scores-container:before {
+  content: "user";
+  position: absolute;
+  width: 60px;
+  font-size: 0.75rem;
+  text-align: center;
+  left: 0;
+  top: 0;
+  background: orangered;
+  padding: 5px 10px;
+  color: #fff;
+}
+
+#scores-container:after {
+  content: "computer";
+  position: absolute;
+  width: 60px;
+  font-size: 0.75rem;
+  text-align: center;
+  right: 0;
+  top: 0;
+  background: orangered;
+  padding: 5px 10px;
+  color: #fff;
+}
+
+#scores-container > span {
+  font-size: 3rem;
+  padding: 20px;
+}
+
+#user-feedback {
+  text-align: center;
+  font-size: 2rem;
+}
+
+#icons-container {
+  text-align: center;
+}
+
+.move {
+  display: inline-block;
+  border: 4px solid #fff;
+  background: #333333;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 20px;
+  transition: background 250ms ease;
+}
+
+.move:hover {
+  cursor: pointer;
+  background: #3a3a3a;
+}
+
+#user-instructions {
+  text-align: center;
+  font-size: 1.5rem;
+}

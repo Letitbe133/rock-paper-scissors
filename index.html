@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Rock - Paper - Scissors</title>
+    <!-- Let's import our css file -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- First let's think about what elements we need to play the game -->
+    <!-- 
+          - a header to display the page title
+          - a container to display the scores for the player and the computer
+          - a container to display a message for the user (win - lose - draw)
+          - a way to choose between rock, paper or scissors
+          - a text explaining what the user should do
+       -->
+
+    <!-- Let's build the header, we'll use the <header> tag since it's perfectly fit -->
+    <header>
+      <h1>Rock, Paper, Scissors</h1>
+    </header>
+
+    <!-- Next, let's find a way to display the scores
+        We'll just use a dvi tag here and give it an id
+    -->
+    <div id="scores-container">
+      <!-- Inside we'll have 2 spans to display the user score and the computer score
+            Each will have an id
+        -->
+      <span id="user-score">0</span> : <span id="computer-score">0</span>
+    </div>
+
+    <!-- Next we'll have a div where a message will be displayed to the user for each turn
+        We'll give it an id too
+    -->
+    <div>
+      <p id="user-feedback"></p>
+    </div>
+
+    <!-- Next we'll have a container that will display 3 icons -->
+    <div id="icons-container">
+      <button id="rock" class="move" data-name="rock">
+        <img src="images/icons8-hand-rock-96.png" alt="Rock" />
+      </button>
+      <button id="paper" class="move" data-name="paper">
+        <img src="images/icons8-hand-96.png" alt="Paper" />
+      </button>
+      <button id="scissors" class="move" data-name="scissors">
+        <img src="images/icons8-hand-scissors-96.png" alt="Scissors" />
+      </button>
+    </div>
+
+    <!-- Finally we'll have a text telling the user what he should do to play the game -->
+    <div id="user-instructions">
+      <p>Pick up your move !</p>
+    </div>
+
+    <!-- Let's import our javascript file -->
+    <script src="main.js"></script>
+  </body>
+</html>
